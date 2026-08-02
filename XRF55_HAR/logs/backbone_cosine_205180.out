@@ -1,0 +1,4 @@
+name, memory.total [MiB]
+NVIDIA H100 80GB HBM3, 81559 MiB
+protocol: scenes=all, train=15400, test=6600
+wifi epoch=001 lr=0.001 loss=3.85753 train_accuracy=0.0467

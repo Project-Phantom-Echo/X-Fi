@@ -1,0 +1,5 @@
+name, memory.total [MiB]
+NVIDIA H100 80GB HBM3, 81559 MiB
+mmwave: all=0.8206, Scene1=0.8661, Scene2=0.7626, Scene3=0.7616, Scene4=0.7707
+wifi: all=0.8098, Scene1=0.8523, Scene2=0.7606, Scene3=0.8172, Scene4=0.6960
+rfid: all=0.4412, Scene1=0.5253, Scene2=0.2364, Scene3=0.3980, Scene4=0.3808

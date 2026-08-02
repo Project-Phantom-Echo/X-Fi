@@ -1,0 +1,22 @@
+{
+  "status": "recovered from deleted preparation notebooks at commit 68b5fcf",
+  "modality": "wifi",
+  "scenes": "all",
+  "train_samples": 15400,
+  "test_samples": 6600,
+  "epochs": 1,
+  "batch_size": 4,
+  "test_batch_size": 32,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "lr_milestones": [],
+  "lr_gamma": null,
+  "seed": 3407,
+  "checkpoint_selection": "highest test accuracy, evaluated every 10 epochs",
+  "max_train_batches": 2,
+  "max_test_batches": 2,
+  "saved_every_evaluation": false,
+  "best_test_accuracy": 0.0,
+  "mmwave_initial_checkpoint": null,
+  "model_path": "/mnt/weka/fgeikyan/rf-perception-papers/x-fi/code/XRF55_HAR/smoke_backbones/202058/WIFI/wifi_ResNet18.pt"
+}

@@ -1,0 +1,5 @@
+einops==0.4.0
+numpy==1.23.0
+PyYAML==6.0.1
+scipy==1.9.1
+tqdm==4.66.3

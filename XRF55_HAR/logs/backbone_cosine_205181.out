@@ -1,0 +1,72 @@
+name, memory.total [MiB]
+NVIDIA H100 80GB HBM3, 81559 MiB
+protocol: scenes=all, train=15400, test=6600
+wifi scheduler=cosine-tail base_lr=0.001 constant_epochs=1-70 cosine_epochs=71-100 minimum_lr=1e-05 warmup=none
+wifi epoch=001 lr=0.001 loss=3.85753 train_accuracy=0.0467
+wifi epoch=010 lr=0.001 loss=1.60597 train_accuracy=0.4769
+wifi epoch=010 test_loss=1.83378 test_accuracy=0.4595
+wifi epoch=020 lr=0.001 loss=0.67261 train_accuracy=0.7724
+wifi epoch=020 test_loss=0.95799 test_accuracy=0.7148
+wifi epoch=030 lr=0.001 loss=0.39089 train_accuracy=0.8693
+wifi epoch=030 test_loss=0.84040 test_accuracy=0.7685
+wifi epoch=040 lr=0.001 loss=0.28022 train_accuracy=0.9088
+wifi epoch=040 test_loss=0.75610 test_accuracy=0.7948
+wifi epoch=050 lr=0.001 loss=0.19474 train_accuracy=0.9355
+wifi epoch=050 test_loss=0.68752 test_accuracy=0.8291
+wifi epoch=060 lr=0.001 loss=0.16015 train_accuracy=0.9497
+wifi epoch=060 test_loss=0.64846 test_accuracy=0.8436
+wifi epoch=070 lr=0.001 loss=0.15309 train_accuracy=0.9516
+wifi epoch=070 test_loss=0.62110 test_accuracy=0.8491
+wifi epoch=080 lr=0.0007827876 loss=0.06153 train_accuracy=0.9814
+wifi epoch=080 test_loss=0.68542 test_accuracy=0.8403
+wifi epoch=090 lr=0.00027313782 loss=0.01522 train_accuracy=0.9964
+wifi epoch=090 test_loss=0.46227 test_accuracy=0.9039
+wifi epoch=100 lr=1e-05 loss=0.00372 train_accuracy=0.9994
+wifi epoch=100 test_loss=0.43510 test_accuracy=0.9132
+saved /mnt/weka/fgeikyan/rf-perception-papers/x-fi/code/XRF55_HAR/cosine_backbones/seed3407_job205181/WIFI/wifi_ResNet18.pt; selection=final selected_test_accuracy=0.9132
+rfid scheduler=cosine-tail base_lr=0.001 constant_epochs=1-70 cosine_epochs=71-100 minimum_lr=1e-05 warmup=none
+rfid epoch=001 lr=0.001 loss=4.08060 train_accuracy=0.0212
+rfid epoch=010 lr=0.001 loss=3.24493 train_accuracy=0.1349
+rfid epoch=010 test_loss=3.22876 test_accuracy=0.1380
+rfid epoch=020 lr=0.001 loss=1.59453 train_accuracy=0.5401
+rfid epoch=020 test_loss=2.36201 test_accuracy=0.3688
+rfid epoch=030 lr=0.001 loss=0.47469 train_accuracy=0.8553
+rfid epoch=030 test_loss=2.89392 test_accuracy=0.4003
+rfid epoch=040 lr=0.001 loss=0.23425 train_accuracy=0.9281
+rfid epoch=040 test_loss=3.40209 test_accuracy=0.3964
+rfid epoch=050 lr=0.001 loss=0.15460 train_accuracy=0.9535
+rfid epoch=050 test_loss=3.51333 test_accuracy=0.3938
+rfid epoch=060 lr=0.001 loss=0.13543 train_accuracy=0.9573
+rfid epoch=060 test_loss=3.56517 test_accuracy=0.3961
+rfid epoch=070 lr=0.001 loss=0.09399 train_accuracy=0.9719
+rfid epoch=070 test_loss=3.76134 test_accuracy=0.3852
+rfid epoch=080 lr=0.0007827876 loss=0.05797 train_accuracy=0.9833
+rfid epoch=080 test_loss=3.72540 test_accuracy=0.4032
+rfid epoch=090 lr=0.00027313782 loss=0.00657 train_accuracy=0.9988
+rfid epoch=090 test_loss=3.63164 test_accuracy=0.4368
+rfid epoch=100 lr=1e-05 loss=0.00180 train_accuracy=0.9998
+rfid epoch=100 test_loss=3.51241 test_accuracy=0.4467
+saved /mnt/weka/fgeikyan/rf-perception-papers/x-fi/code/XRF55_HAR/cosine_backbones/seed3407_job205181/RFID/rfid_ResNet18.pt; selection=final selected_test_accuracy=0.4467
+mmwave scheduler=cosine-tail base_lr=0.0001 constant_epochs=1-70 cosine_epochs=71-100 minimum_lr=1e-06 warmup=none
+mmwave epoch=001 lr=0.0001 loss=2.72291 train_accuracy=0.2565
+mmwave epoch=010 lr=0.0001 loss=0.17914 train_accuracy=0.9476
+mmwave epoch=010 test_loss=0.67172 test_accuracy=0.8023
+mmwave epoch=020 lr=0.0001 loss=0.08070 train_accuracy=0.9753
+mmwave epoch=020 test_loss=0.87778 test_accuracy=0.7841
+mmwave epoch=030 lr=0.0001 loss=0.05348 train_accuracy=0.9842
+mmwave epoch=030 test_loss=0.87788 test_accuracy=0.7911
+mmwave epoch=040 lr=0.0001 loss=0.05235 train_accuracy=0.9836
+mmwave epoch=040 test_loss=0.71257 test_accuracy=0.8283
+mmwave epoch=050 lr=0.0001 loss=0.05436 train_accuracy=0.9843
+mmwave epoch=050 test_loss=0.66286 test_accuracy=0.8476
+mmwave epoch=060 lr=0.0001 loss=0.03207 train_accuracy=0.9893
+mmwave epoch=060 test_loss=0.61663 test_accuracy=0.8655
+mmwave epoch=070 lr=0.0001 loss=0.02228 train_accuracy=0.9938
+mmwave epoch=070 test_loss=0.68295 test_accuracy=0.8521
+mmwave epoch=080 lr=7.827876e-05 loss=0.01114 train_accuracy=0.9973
+mmwave epoch=080 test_loss=0.58952 test_accuracy=0.8703
+mmwave epoch=090 lr=2.7313782e-05 loss=0.00064 train_accuracy=1.0000
+mmwave epoch=090 test_loss=0.48218 test_accuracy=0.9000
+mmwave epoch=100 lr=1e-06 loss=0.00007 train_accuracy=1.0000
+mmwave epoch=100 test_loss=0.44278 test_accuracy=0.9045
+saved /mnt/weka/fgeikyan/rf-perception-papers/x-fi/code/XRF55_HAR/cosine_backbones/seed3407_job205181/mmWave/mmwave_ResNet18.pt; selection=final selected_test_accuracy=0.9045

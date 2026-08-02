@@ -1,0 +1,38 @@
+{
+  "mmwave": {
+    "Scene1": 0.8661157024793389,
+    "Scene1_samples": 3630,
+    "Scene2": 0.7626262626262627,
+    "Scene2_samples": 990,
+    "Scene3": 0.7616161616161616,
+    "Scene3_samples": 990,
+    "Scene4": 0.7707070707070707,
+    "Scene4_samples": 990,
+    "all": 0.8206060606060606,
+    "all_samples": 6600
+  },
+  "wifi": {
+    "Scene1": 0.8523415977961433,
+    "Scene1_samples": 3630,
+    "Scene2": 0.7606060606060606,
+    "Scene2_samples": 990,
+    "Scene3": 0.8171717171717172,
+    "Scene3_samples": 990,
+    "Scene4": 0.695959595959596,
+    "Scene4_samples": 990,
+    "all": 0.8098484848484848,
+    "all_samples": 6600
+  },
+  "rfid": {
+    "Scene1": 0.5253443526170799,
+    "Scene1_samples": 3630,
+    "Scene2": 0.23636363636363636,
+    "Scene2_samples": 990,
+    "Scene3": 0.397979797979798,
+    "Scene3_samples": 990,
+    "Scene4": 0.3808080808080808,
+    "Scene4_samples": 990,
+    "all": 0.4412121212121212,
+    "all_samples": 6600
+  }
+}
