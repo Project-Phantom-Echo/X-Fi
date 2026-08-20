@@ -13,9 +13,9 @@
 set -e
 
 PROJECT_ROOT="/mnt/weka/fgeikyan/rf-perception-papers"
-RUN_DIR="$PROJECT_ROOT/x-fi/code/XRF55_HAR"
-PYTHON="$PROJECT_ROOT/compass/code/.venv/bin/python"
-DATASET="$PROJECT_ROOT/compass/code/data/XRF55"
+RUN_DIR="$PROJECT_ROOT/x-fi/XRF55_HAR"
+PYTHON="$PROJECT_ROOT/compass/.venv/bin/python"
+DATASET="$PROJECT_ROOT/compass/data/XRF55"
 OUTPUT="$RUN_DIR/reproduced_backbones/seed3407_job${SLURM_JOB_ID}"
 
 cd "$RUN_DIR"

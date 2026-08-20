@@ -1,9 +1,0 @@
-name, memory.total [MiB]
-NVIDIA H100 80GB HBM3, 81559 MiB
-protocol: scenes=all, train=15400, test=6600
-wifi epoch=001 loss=4.03923 train_accuracy=0.0000
-wifi epoch=001 test_loss=16.15748 test_accuracy=0.0000
-saved /mnt/weka/fgeikyan/rf-perception-papers/x-fi/code/XRF55_HAR/smoke_backbones/202058/WIFI/wifi_ResNet18.pt; best_test_accuracy=0.0000
-rfid epoch=001 loss=3.90851 train_accuracy=0.0000
-rfid epoch=001 test_loss=4.00289 test_accuracy=0.0938
-saved /mnt/weka/fgeikyan/rf-perception-papers/x-fi/code/XRF55_HAR/smoke_backbones/202058/RFID/rfid_ResNet18.pt; best_test_accuracy=0.0938

@@ -13,10 +13,10 @@
 set -e
 
 PROJECT_ROOT="/mnt/weka/fgeikyan/rf-perception-papers"
-RUN_DIR="$PROJECT_ROOT/x-fi/code/XRF55_HAR"
-PYTHON="$PROJECT_ROOT/compass/code/.venv/bin/python"
-DATASET="$PROJECT_ROOT/compass/code/data/XRF55"
-WEIGHTS="$PROJECT_ROOT/compass/code/XRF55_HAR/backbone_models"
+RUN_DIR="$PROJECT_ROOT/x-fi/XRF55_HAR"
+PYTHON="$PROJECT_ROOT/compass/.venv/bin/python"
+DATASET="$PROJECT_ROOT/compass/data/XRF55"
+WEIGHTS="$PROJECT_ROOT/compass/XRF55_HAR/backbone_models"
 OUTPUT="$RUN_DIR/reference_backbone_results.json"
 
 cd "$RUN_DIR"

@@ -152,3 +152,10 @@ data/
 *.log
 
 test.ipynb
+
+# Run artefacts: SLURM logs and model weights stay local. The JSON metadata
+# beside each checkpoint is kept, since it records the reported accuracies.
+XRF55_HAR/logs/
+logs/
+*.pt
+*.pth
