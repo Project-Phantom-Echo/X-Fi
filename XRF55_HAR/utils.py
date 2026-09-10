@@ -78,7 +78,7 @@ def har_test(model, tensor_loader, criterion, device,val_random_seed):
     print("validation accuracy:{:.4f}, loss:{:.5f}".format(float(test_acc),float(test_loss)))
     return test_acc
 
-def har_train(model, train_loader, test_loader, num_epochs, learning_rate, criterion, device, save_dir, val_random_seed):
+def har_train(model, train_loader, test_loader, num_epochs, learning_rate, criterion, device, save_dir, val_random_seed, checkpoint_name=None):
     optimizer = torch.optim.AdamW(
         [
                 {'params': model.linear_projector.parameters()},
@@ -87,7 +87,9 @@ def har_train(model, train_loader, test_loader, num_epochs, learning_rate, crite
         lr = learning_rate
     )
     now_time = datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
-    parameter_dir = save_dir + '/checkpoint_' + now_time + '.pth'
+    if checkpoint_name is None:
+        checkpoint_name = 'checkpoint_' + now_time + '.pth'
+    parameter_dir = save_dir + '/' + checkpoint_name
     best_test_acc = 0.0
     for epoch in range(num_epochs):
         model.train()
@@ -134,7 +136,7 @@ def har_train(model, train_loader, test_loader, num_epochs, learning_rate, crite
                 print(f"best test accuracy is:{test_acc}")
                 best_test_acc = test_acc
     torch.save(model.state_dict(), parameter_dir)
-    return
+    return parameter_dir
 
 def multi_test(model, tensor_loader, criterion, device):
     model.eval()

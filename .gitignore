@@ -156,6 +156,12 @@ test.ipynb
 # Run artefacts: SLURM logs and model weights stay local. The JSON metadata
 # beside each checkpoint is kept, since it records the reported accuracies.
 XRF55_HAR/logs/
+XRF55_HAR/unified_runs/
 logs/
 *.pt
 *.pth
+
+# Keep full-run scalar evidence; exclude pilots and large generated artifacts.
+XRF55_HAR/backbone_grid/
+XRF55_HAR/backbone_tests/
+*.npy

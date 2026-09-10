@@ -1,0 +1,209 @@
+[
+  {
+    "protocol": "unseen_scene_unseen_subject",
+    "modality": "mmwave",
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "dropout": 0.0,
+    "validation_mean": 0.10257575757575757,
+    "selection_seeds": [
+      1,
+      2
+    ],
+    "test_seeds": [
+      1,
+      2,
+      3
+    ],
+    "source_records": [
+      "backbone_grid/unseen_scene_unseen_subject/mmwave/unseen_scene_unseen_subject-mmwave-bs64-lr1e-3-wd0.01-do0.0-s2/result.json",
+      "backbone_grid/unseen_scene_unseen_subject/mmwave/unseen_scene_unseen_subject-mmwave-bs64-lr1e-3-wd0.01-do0.0-s1/result.json"
+    ],
+    "evidence_file": "backbone_validation_results.json"
+  },
+  {
+    "protocol": "unseen_scene_unseen_subject",
+    "modality": "rfid",
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "dropout": 0.0,
+    "validation_mean": 0.025757575757575757,
+    "selection_seeds": [
+      1,
+      2
+    ],
+    "test_seeds": [
+      1,
+      2,
+      3
+    ],
+    "source_records": [
+      "backbone_grid/unseen_scene_unseen_subject/rfid/unseen_scene_unseen_subject-rfid-bs16-lr1e-4-wd0.01-do0.0-s2/result.json",
+      "backbone_grid/unseen_scene_unseen_subject/rfid/unseen_scene_unseen_subject-rfid-bs16-lr1e-4-wd0.01-do0.0-s1/result.json"
+    ],
+    "evidence_file": "backbone_validation_results.json"
+  },
+  {
+    "protocol": "unseen_scene_unseen_subject",
+    "modality": "wifi",
+    "batch_size": 64,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.3,
+    "dropout": 0.3,
+    "validation_mean": 0.03227272727272727,
+    "selection_seeds": [
+      1,
+      2
+    ],
+    "test_seeds": [
+      1,
+      2,
+      3
+    ],
+    "source_records": [
+      "backbone_grid/unseen_scene_unseen_subject/wifi/unseen_scene_unseen_subject-wifi-bs64-lr1e-4-wd0.3-do0.3-s1/result.json",
+      "backbone_grid/unseen_scene_unseen_subject/wifi/unseen_scene_unseen_subject-wifi-bs64-lr1e-4-wd0.3-do0.3-s2/result.json"
+    ],
+    "evidence_file": "backbone_validation_results.json"
+  },
+  {
+    "protocol": "unseen_scenes",
+    "modality": "mmwave",
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "dropout": 0.0,
+    "validation_mean": 0.0765909090909091,
+    "selection_seeds": [
+      1,
+      2
+    ],
+    "test_seeds": [
+      1,
+      2,
+      3
+    ],
+    "source_records": [
+      "backbone_grid/unseen_scenes/mmwave/unseen_scenes-mmwave-bs32-lr1e-3-wd0.01-do0.0-s2/result.json",
+      "backbone_grid/unseen_scenes/mmwave/unseen_scenes-mmwave-bs32-lr1e-3-wd0.01-do0.0-s1/result.json"
+    ],
+    "evidence_file": "backbone_validation_results.json"
+  },
+  {
+    "protocol": "unseen_scenes",
+    "modality": "rfid",
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "dropout": 0.3,
+    "validation_mean": 0.023636363636363636,
+    "selection_seeds": [
+      1,
+      2
+    ],
+    "test_seeds": [
+      1,
+      2,
+      3
+    ],
+    "source_records": [
+      "backbone_grid/unseen_scenes/rfid/unseen_scenes-rfid-bs32-lr1e-4-wd0.01-do0.3-s2/result.json",
+      "backbone_grid/unseen_scenes/rfid/unseen_scenes-rfid-bs32-lr1e-4-wd0.01-do0.3-s1/result.json"
+    ],
+    "evidence_file": "backbone_validation_results.json"
+  },
+  {
+    "protocol": "unseen_scenes",
+    "modality": "wifi",
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.3,
+    "dropout": 0.0,
+    "validation_mean": 0.04181818181818182,
+    "selection_seeds": [
+      1,
+      2
+    ],
+    "test_seeds": [
+      1,
+      2,
+      3
+    ],
+    "source_records": [
+      "backbone_grid/unseen_scenes/wifi/unseen_scenes-wifi-bs16-lr1e-3-wd0.3-do0.0-s2/result.json",
+      "backbone_grid/unseen_scenes/wifi/unseen_scenes-wifi-bs16-lr1e-3-wd0.3-do0.0-s1/result.json"
+    ],
+    "evidence_file": "backbone_validation_results.json"
+  },
+  {
+    "protocol": "unseen_subjects_validation",
+    "modality": "mmwave",
+    "batch_size": 64,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "dropout": 0.0,
+    "validation_mean": 0.6162727272727273,
+    "selection_seeds": [
+      1,
+      2
+    ],
+    "test_seeds": [
+      1,
+      2,
+      3
+    ],
+    "source_records": [
+      "backbone_grid/unseen_subjects_validation/mmwave/unseen_subjects_validation-mmwave-bs64-lr3e-4-wd0.01-do0.0-s2/result.json",
+      "backbone_grid/unseen_subjects_validation/mmwave/unseen_subjects_validation-mmwave-bs64-lr3e-4-wd0.01-do0.0-s1/result.json"
+    ],
+    "evidence_file": "backbone_validation_results.json"
+  },
+  {
+    "protocol": "unseen_subjects_validation",
+    "modality": "rfid",
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.3,
+    "dropout": 0.3,
+    "validation_mean": 0.07936363636363636,
+    "selection_seeds": [
+      1,
+      2
+    ],
+    "test_seeds": [
+      1,
+      2,
+      3
+    ],
+    "source_records": [
+      "backbone_grid/unseen_subjects_validation/rfid/unseen_subjects_validation-rfid-bs16-lr1e-3-wd0.3-do0.3-s2/result.json",
+      "backbone_grid/unseen_subjects_validation/rfid/unseen_subjects_validation-rfid-bs16-lr1e-3-wd0.3-do0.3-s1/result.json"
+    ],
+    "evidence_file": "backbone_validation_results.json"
+  },
+  {
+    "protocol": "unseen_subjects_validation",
+    "modality": "wifi",
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.3,
+    "dropout": 0.3,
+    "validation_mean": 0.03781818181818182,
+    "selection_seeds": [
+      1,
+      2
+    ],
+    "test_seeds": [
+      1,
+      2,
+      3
+    ],
+    "source_records": [
+      "backbone_grid/unseen_subjects_validation/wifi/unseen_subjects_validation-wifi-bs16-lr1e-3-wd0.3-do0.3-s2/result.json",
+      "backbone_grid/unseen_subjects_validation/wifi/unseen_subjects_validation-wifi-bs16-lr1e-3-wd0.3-do0.3-s1/result.json"
+    ],
+    "evidence_file": "backbone_validation_results.json"
+  }
+]

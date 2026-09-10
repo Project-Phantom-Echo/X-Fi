@@ -10,6 +10,10 @@ def main():
     parser = argparse.ArgumentParser('X-Fi model for XRF55 HAR')
     parser.add_argument('--dataset', type=str, required=True, help='path to dataset, e.g. D:/Data/XRF55/XRF_dataset')
     parser.add_argument('--pt_weights', type=str, required=True, help='path to pretrained model weights, e.g. ./pre-trained_weights/XRF55_har_checkpoint.pt')
+    parser.add_argument('--backbone-root', type=str, default='./backbone_models')
+    parser.add_argument(
+        '--backbone-source', choices=('released', 'ours'), default='released'
+    )
     args = parser.parse_args()
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -19,9 +23,14 @@ def main():
     test_dataloader = DataLoader(test_dataset, batch_size=32, shuffle=False, collate_fn=collate_fn_padd)
     
     torch.manual_seed(3407)
-    model = X_Fi(model_depth=5, num_classes=55)
+    model = X_Fi(
+        model_depth=5,
+        num_classes=55,
+        backbone_root=args.backbone_root,
+        backbone_source=args.backbone_source,
+    )
     model.to(device)
-    model.load_state_dict(torch.load(args.pt_weights))
+    model.load_state_dict(torch.load(args.pt_weights, map_location=device))
 
     criterion = nn.CrossEntropyLoss()
     multi_test(model, test_dataloader, criterion, device)

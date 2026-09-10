@@ -26,6 +26,7 @@ nvidia-smi --query-gpu=name,memory.total --format=csv
 "$PYTHON" evaluate_backbones.py \
   --dataset "$DATASET" \
   --weights-root "$WEIGHTS" \
+  --backbone-source released \
   --batch-size 64 \
   --workers 8 \
   --output "$OUTPUT"

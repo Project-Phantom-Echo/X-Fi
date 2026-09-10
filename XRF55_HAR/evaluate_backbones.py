@@ -10,6 +10,7 @@ import torch
 from torch.utils.data import DataLoader
 
 from XRF55_Dataset import XRF55_Datase
+from backbone_paths import resolve_backbones
 from pretrain_backbones import MODEL_SPECS, select_input
 
 
@@ -17,6 +18,9 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", type=Path, required=True)
     parser.add_argument("--weights-root", type=Path, required=True)
+    parser.add_argument(
+        "--backbone-source", choices=("released", "ours"), default="released"
+    )
     parser.add_argument(
         "--modalities",
         nargs="+",
@@ -60,14 +64,12 @@ def main() -> None:
     args = parse_args()
     device = torch.device(args.device)
     results: dict[str, dict[str, float | int]] = {}
+    backbone_paths, backbone_sha256 = resolve_backbones(
+        args.weights_root, args.backbone_source
+    )
 
     for modality in args.modalities:
-        _, relative_path = MODEL_SPECS[modality]
-        model_path = args.weights_root / relative_path
-        if modality == "rfid" and not model_path.exists():
-            released_name = model_path.with_name("RFID_ResNet18.pt")
-            if released_name.exists():
-                model_path = released_name
+        model_path = backbone_paths[modality]
         model = load_model(model_path, device)
         modality_results: dict[str, float | int] = {}
         total_correct_equivalent = 0.0
@@ -99,6 +101,11 @@ def main() -> None:
         )
 
     if args.output:
+        results["provenance"] = {
+            "backbone_source": args.backbone_source,
+            "backbone_paths": {name: str(path) for name, path in backbone_paths.items()},
+            "backbone_sha256": backbone_sha256,
+        }
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(results, indent=2) + "\n")
 

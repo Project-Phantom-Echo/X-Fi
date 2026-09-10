@@ -1,3 +1,10 @@
+## Reproduction experiments
+
+See [reproduction details](reproduction-details.md) for the recovered recipes
+and limitations, and [backbone tuning](hparam-search.md) for the full grid,
+recorded validation results and frozen test procedure. The original project
+description follows.
+
 # X-Fi: A Modality-Invariant Foundation Model for Multimodal Human Sensing
 
 This repository is the official code implementation of the paper [X-Fi: A Modality-Invariant Foundation Model for Multimodal Human Sensing](https://openreview.net/pdf?id=b42wmsdwmB) published on **ICLR 2025**.\
