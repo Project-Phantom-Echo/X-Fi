@@ -1,0 +1,11 @@
+{
+  "job_id": 266780,
+  "array": "0-431",
+  "seed": 1,
+  "maximum_concurrent_tasks": null,
+  "dependency": null,
+  "replaces_cancelled_arrays": [
+    266119,
+    266120
+  ]
+}

@@ -1,0 +1,1328 @@
+{
+  "tasks": [
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "wifi",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "rfid",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 32,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "dropout": 0.3,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.0,
+      "seed": 1
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "modality": "mmwave",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.3,
+      "dropout": 0.3,
+      "seed": 1
+    }
+  ],
+  "raw_root": "/mnt/weka/rmkrtchyan/ws/data/XRF55",
+  "source_sha256": {
+    "search_protocol_backbone.py": "c3a50a79a482ca6f68999763843e7f9fd7c9c33035cf812488647296c918735f",
+    "search_backbone.py": "9773caa152496c2f0233443dcdf5455fcef4e1c542e4255af9a649a642b059f8",
+    "protocol_backbone_runner.py": "7ac45ed0f45ac5dc9f484ec582d1600ea53faf15f92b4ba05ae07a5a54214c04",
+    "protocol_backbone_grid.py": "04dc7ee24e54ca642f13746b9c3216d3b7917871d4a8d6fee81226b9dacf0eb3",
+    "near_chance.py": "b99d2406d6c82e4ef6d276f4b3472d70b3b5fe28fca3810c2d5065282bc6c8c2",
+    "pretrain_backbones.py": "30c721009eb796f3dfd0ac7a94b63e872a3fd022366d20cf17582b5194ef4bad",
+    "XRF55_Dataset.py": "acd30c5e8f1c616a6c0215dde8ce8158297c4d9c9b61b7a7ec3b684ab1fec41f",
+    "protocol_snapshot_v2/dataset.py": "3013551c6f583f1200d51ff1a26f4bb89779e8d91ca0e31a2818ae7166e6e0b4",
+    "protocol_snapshot_v2/split.py": "2d41f32ec9db3108cefc76517c7fc0d4485e0114856029bb7262d4cdec8444fb",
+    "protocol_snapshot_v2/sha256.json": "b7118a9ddb96c18c87793009d1b4b82987690862389e4976da6fb2c42ad7d6bb",
+    "protocol_snapshot_v2/subject_splits.json": "52610574a5a1af8097b141a39055a60348e3ecc20087df3f749b6ebd8afc0847",
+    "backbone_models/RFID/ResNet.py": "c5cfa4b0cd1ad28811ee618f6899fce8ae1c0af373128f1b2ecddf505dd6ebb1",
+    "backbone_models/WIFI/ResNet.py": "f0dc9da6d0499dddd45142bee6a44dcfb0011a9c2a73f07fa25e8fa88b9a6dd1",
+    "backbone_models/mmWave/ResNet.py": "43c98e1b53729fdbb985cf08dfb632a43b8647e9b3a203af4f2291edb7a68593"
+  },
+  "epochs": 100,
+  "selection": "mean final-epoch validation accuracy over configured seeds",
+  "seeds": [
+    1
+  ],
+  "validation_interval_epochs": 1,
+  "near_chance_stop": {
+    "patience_epochs": 30,
+    "threshold_accuracy": 0.022
+  },
+  "test_data_opened": false
+}
