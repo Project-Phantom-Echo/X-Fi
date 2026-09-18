@@ -59,31 +59,27 @@ class rfid_feature_extractor(nn.Module):
 
 
 class feature_extrator(nn.Module):
-    def __init__(self, backbone_root='./backbone_models', backbone_source='released'):
+    def __init__(self, backbone_root='./backbone_models', backbone_source='released', backbone_models=None):
         super(feature_extrator, self).__init__()
 
-        backbone_paths, backbone_sha256 = resolve_backbones(
-            backbone_root, backbone_source
-        )
+        if backbone_models is None:
+            backbone_paths, backbone_sha256 = resolve_backbones(backbone_root, backbone_source)
+            self.backbone_paths = {name:str(path) for name,path in backbone_paths.items()}
+            self.backbone_sha256 = backbone_sha256
+            mmwave_model = torch.load(backbone_paths['mmwave'], map_location='cpu')
+            wifi_model = torch.load(backbone_paths['wifi'], map_location='cpu')
+            rfid_model = torch.load(backbone_paths['rfid'], map_location='cpu')
+        else:
+            mmwave_model, wifi_model, rfid_model = (backbone_models[m] for m in ('mmwave','wifi','rfid'))
+            self.backbone_paths = {}
+            self.backbone_sha256 = {}
         self.backbone_source = backbone_source
-        self.backbone_paths = {name: str(path) for name, path in backbone_paths.items()}
-        self.backbone_sha256 = backbone_sha256
-
-        mmwave_model = torch.load(
-            backbone_paths['mmwave'],
-            map_location='cpu',
-        )
         mmwave_extractor = mmwave_feature_extractor(mmwave_model)
         mmwave_extractor.eval()
 
-        wifi_model = torch.load(
-            backbone_paths['wifi'],
-            map_location='cpu',
-        )
         wifi_extractor = wifi_feature_extractor(wifi_model)
         wifi_extractor.eval()
 
-        rfid_model = torch.load(backbone_paths['rfid'], map_location='cpu')
         rfid_extractor = rfid_feature_extractor(rfid_model)
         rfid_extractor.eval()
 
@@ -412,11 +408,12 @@ class X_Fusion(nn.Module):
 
 
 class X_Fi(nn.Module):
-    def __init__(self, model_depth, num_classes, backbone_root='./backbone_models', backbone_source='released'):
+    def __init__(self, model_depth, num_classes, backbone_root='./backbone_models', backbone_source='released', backbone_models=None):
         super(X_Fi, self).__init__()
         self.feature_extractor = feature_extrator(
             backbone_root=backbone_root,
             backbone_source=backbone_source,
+            backbone_models=backbone_models,
         )
         self.linear_projector = linear_projector(512, 512)
         self.X_Fusion_block = X_Fusion(

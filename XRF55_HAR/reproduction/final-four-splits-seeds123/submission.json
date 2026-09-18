@@ -1,0 +1,12 @@
+{
+  "job_id": "270241",
+  "array": "0-35",
+  "submitted_at_utc": "2026-09-17T13:32:17.966938+00:00",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "epochs": 100,
+  "command": "XFI_FINAL_CAMPAIGN=/mnt/weka/fgeikyan/rf-perception-papers/x-fi/XRF55_HAR/backbone_tests/final-four-splits-seeds123 sbatch --parsable --export=ALL --array=0-35 submit_final_protocol_backbones.sh"
+}
