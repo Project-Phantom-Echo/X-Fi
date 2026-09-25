@@ -1,5 +1,12 @@
 # X-Fi backbone hyperparameter search
 
+> Historical campaign log. References below to “current”, queued jobs, and
+> epoch-100 selection describe those original campaigns. The latest selection
+> uses EMA validation accuracy (α=0.1); use the shared
+> [hyperparameter report](https://github.com/Project-Phantom-Echo/wireless-sensing/blob/main/docs/Filyas-notes/models-for-xrf55/hparam-tuning.md)
+> and [final results](https://github.com/Project-Phantom-Echo/wireless-sensing/blob/main/docs/Filyas-notes/models-for-xrf55/final-results.md)
+> for current results.
+
 We train each released X-Fi backbone architecture from random initialization on our three validation protocols, to
 answer whether their weak cross-subject and cross-room results are a
 hyperparameter choice or a property of the models.
@@ -119,3 +126,114 @@ The grid did not retain checkpoints, so those models must also be retrained.
 The test runner reuses the grid's model, optimizer, schedule and training loop;
 records source hashes, environment, selections, checkpoint hashes and metrics;
 and refuses to overwrite an existing run directory.
+
+## Proposed grid on the new subject/room splits
+
+`XRF55_HAR/search_protocol_backbone.py` uses the frozen
+`protocol_snapshot_v2` copy of the shared selectors and all 216 HTML subject
+assignments. It also accepts `unseen_room_subject_rotation_1` through `_3`.
+Train on the protocol's training membership; record validation every epoch and
+rank grid configurations by their epoch-100 validation score.
+Test files are not collected or loaded. The historical runner and snapshot remain
+available for reproducing the previous campaign.
+
+The proposed grid is batch 16/32/64 × LR 3e-5/1e-4/3e-4/1e-3 × weight decay
+0.01/0.3 × dropout 0/0.3: 48 configurations, seeds 1/2, all three modalities
+(288 jobs per selected split). Each campaign records every cell and source hashes,
+including the subject catalog, and refuses source drift or completed-run overwrites.
+Bounded smoke results are marked `smoke_test`, separate from complete grid results.
+
+Prepare a campaign from `XRF55_HAR`, supplying the agreed protocol IDs explicitly:
+
+```bash
+../../compass/.venv/bin/python protocol_backbone_grid.py \
+  --campaign backbone_grid/new-splits \
+  --raw-root "$XRF55_RAW_ROOT" \
+  --protocol unseen_subjects_001 \
+  --protocol unseen_room_subject_rotation_1 \
+  --protocol unseen_room_subject_rotation_2 \
+  --protocol unseen_room_subject_rotation_3
+```
+
+This example has 1,152 jobs; it does not submit them. The cluster array limit is
+1,001, so submit two independent 576-task arrays without a concurrency throttle:
+
+```bash
+export XFI_CAMPAIGN="$PWD/backbone_grid/new-splits"
+XFI_TASK_OFFSET=0 sbatch --array=0-575 submit_protocol_backbone_grid.sh
+XFI_TASK_OFFSET=576 sbatch --array=0-575 submit_protocol_backbone_grid.sh
+```
+
+Use the same selected subject IDs and rotations for every method. Split IDs are
+independent of training seeds. Matching subject IDs across scenes remains the
+split definition's provisional identity assumption. Previous runtime estimates
+were for the old three protocols and do not cover this four-split example.
+
+Verified 2026-09-15: four grid/catalog tests passed; actual RFID membership
+counts matched subject split 1 and all room rotations. GPU smoke array 266106
+passed Wi-Fi, RFID and mmWave forward/backward and validation (one batch each);
+no test samples were collected or opened.
+
+Launched 2026-09-15: arrays **266119** (cells 0–575) and **266120**
+(cells 576–1,151), with no array throttle or inter-array dependency. Campaign:
+`XRF55_HAR/backbone_grid/new-splits-20260915`. Subject split 1 plus all three room
+rotations, 48 configurations × 3 modalities × 2 seeds × 4 splits = 1,152 jobs.
+Rank on validation; retrain selected configurations to save backbones before
+full X-Fi training, using the same split membership.
+
+Near-chance stopping enabled before any grid task started: abort after epoch 30
+if best training accuracy is ≤2.2%. Save all epoch training metrics and
+`aborted_at_chance` status; skip validation/test, and never replace the seed.
+The original campaign manifest is retained as `campaign.before-near-chance.json`.
+Boundary, late-recovery and failure-recording tests passed.
+
+Historical stopping-rule audit: **0/675 would stop; 675/675 would continue**
+(648 completed grid runs + 27 selected-model retraining runs). The smallest
+best logged training accuracy through epoch 30 was **34.81%**, above 2.2%.
+Logs contain epochs 1/10/20/30; those observations alone establish preservation
+for every completed run. Eighteen partial-training logs and 1,440 logs without
+training metrics are excluded, not counted as stopping-rule failures.
+This validates preservation on the previous completed runs, not effectiveness
+at catching collapses on the new splits. [Per-run evidence](XRF55_HAR/backbone_near_chance_audit.json).
+
+Per-epoch validation enabled before any grid task started. The new
+`protocol_backbone_runner.py` saves `history.json` after each evaluated epoch
+(training/validation loss, accuracy and sample counts); the result also embeds
+that history. Validation preserves training RNG state. Selection remains fixed
+at epoch 100; validation-based early stopping is not enabled. The near-chance
+training guard still skips evaluation on the aborting epoch. Historical runs
+cannot recover validation measurements that were never computed.
+
+Validation checks: CPU end-to-end training test confirms all three epochs
+appear in history and the reported selection score matches the final epoch;
+near-chance and grid tests pass. GPU smoke array 266217 is queued.
+
+Full X-Fi now supports the same numbered subject splits and room rotations via
+`XRF55_HAR/run_protocol.py`, with validation loss/accuracy saved every epoch and
+split-matched backbone provenance checks. See the sibling
+`wireless-sensing/docs/Filyas-notes/models-for-xrf55/shared-split-training.md`
+for commands and required saved backbone files. Existing backbone grid source
+hashes remain unchanged.
+
+## Current seed-1 campaign
+
+The previous arrays 266119/266120 were already cancelled before resubmission.
+The agreed 48-config grid now uses **seed 1 only**:
+
+- **266779:** subject split 1; 144 tasks; `backbone_grid/seed1-subjects`.
+- **266780:** room rotations 1/2/3; 432 tasks; `backbone_grid/seed1-rotations`.
+
+No array throttle or dependency. Train up to 100 epochs, record validation every
+epoch, rank by final validation accuracy. Retain the training-only near-chance
+stop (best training accuracy ≤2.2% through epoch 30); validation-plateau stopping
+is not enabled. The prior two-seed results/partial histories remain separate.
+Prepare future single-seed campaigns with `protocol_backbone_grid.py --seeds 1`.
+
+Environment-retrieval repair: GPU probe 267399 passed with plain `--export=ALL`
+and campaign variables set in the submitting process environment. Replaced only
+held tasks: **267401** (138 subject tasks) and **267402** (432 rotation tasks).
+The three completed and three running tasks of 266779 were preserved. No seeds,
+configurations, split memberships, or training source hashes changed. Submission
+records are saved as `environment-repair-submission.json` in each campaign.
+Avoid comma-list `--export=ALL,XFI_CAMPAIGN=...`; use the environment prefix and
+plain `--export=ALL` instead.
