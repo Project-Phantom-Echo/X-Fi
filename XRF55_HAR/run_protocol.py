@@ -49,6 +49,7 @@ def main():
     p.add_argument('--batch-size',type=int,default=16)
     p.add_argument('--learning-rate',type=float,default=1e-4)
     p.add_argument('--weight-decay',type=float,default=.01)
+    p.add_argument('--dropout',type=float,default=0.)
     p.add_argument('--workers',type=int,default=8)
     p.add_argument('--device',default='cuda')
     p.add_argument('--evaluate-test',action='store_true')
@@ -61,7 +62,7 @@ def main():
     models,provenance=load_backbone_runs(args.backbone_runs,
         {m:spec[0] for m,spec in MODEL_SPECS.items()},args.protocol,metadata['train_membership'])
     device=torch.device(args.device)
-    model=X_Fi(5,55,backbone_source='protocol',backbone_models=models).to(device)
+    model=X_Fi(5,55,backbone_source='protocol',backbone_models=models,dropout=args.dropout).to(device)
     model.feature_extractor.requires_grad_(False)
     optimizer=torch.optim.AdamW(list(model.linear_projector.parameters())+list(model.X_Fusion_block.parameters()),
                                 lr=args.learning_rate,weight_decay=args.weight_decay)

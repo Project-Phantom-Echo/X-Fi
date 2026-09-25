@@ -165,3 +165,6 @@ logs/
 XRF55_HAR/backbone_grid/
 XRF55_HAR/backbone_tests/
 *.npy
+
+# Full X-Fi fusion grid artifacts
+XRF55_HAR/fusion_grid/

@@ -408,7 +408,7 @@ class X_Fusion(nn.Module):
 
 
 class X_Fi(nn.Module):
-    def __init__(self, model_depth, num_classes, backbone_root='./backbone_models', backbone_source='released', backbone_models=None):
+    def __init__(self, model_depth, num_classes, backbone_root='./backbone_models', backbone_source='released', backbone_models=None, dropout=0.):
         super(X_Fi, self).__init__()
         self.feature_extractor = feature_extrator(
             backbone_root=backbone_root,
@@ -425,7 +425,7 @@ class X_Fi(nn.Module):
             num_heads = 8,
             dim_heads = 64,
             model_depth = model_depth,
-            dropout = 0.,
+            dropout = dropout,
             num_classes = num_classes
         )
     def forward(self,  mmwave_data, wifi_data, rfid_data, modality_list):

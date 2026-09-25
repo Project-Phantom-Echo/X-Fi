@@ -39,3 +39,11 @@ def test_real_xfi_accepts_protocol_backbone_models():
         logits=model(torch.zeros(1,17,256,128),torch.zeros(1,270,1000),
                      torch.zeros(1,23,148),[True,True,True])
     assert logits.shape==(1,55) and torch.isfinite(logits).all()
+
+
+def test_fusion_dropout_is_configurable():
+    from X_Fi import X_Fi
+    models={m:spec[0]() for m,spec in run.MODEL_SPECS.items()}
+    model=X_Fi(1,55,backbone_source='protocol',backbone_models=models,dropout=.3)
+    drops=[m.p for m in model.X_Fusion_block.modules() if isinstance(m,nn.Dropout)]
+    assert drops and all(p==.3 for p in drops)

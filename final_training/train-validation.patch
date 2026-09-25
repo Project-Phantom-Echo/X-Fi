@@ -1,0 +1,59 @@
+--- x-fi/XRF55_HAR/run_protocol.py
++++ x-fi/XRF55_HAR/run_protocol.py
+@@ -52,6 +52,7 @@
+     p.add_argument('--workers',type=int,default=8)
+     p.add_argument('--device',default='cuda')
+     p.add_argument('--evaluate-test',action='store_true')
++    p.add_argument('--train-with-validation',action='store_true')
+     p.add_argument('--max-train-batches',type=int)
+     p.add_argument('--max-eval-batches',type=int)
+     args=p.parse_args()
+@@ -69,19 +70,31 @@
+         return DataLoader(FusionDataset(samples),batch_size=args.batch_size,shuffle=shuffle,
+             num_workers=args.workers,pin_memory=device.type=='cuda',
+             generator=torch.Generator().manual_seed(args.seed+(0 if shuffle else 1000000)))
+-    train,validation=loader(data['train'],True),loader(data['validation'])
++    if args.train_with_validation:
++        training = {}
++        for modality in data['train']:
++            a,b=data['train'][modality],data['validation'][modality]
++            if {s.identity for s in a}&{s.identity for s in b}:
++                raise ValueError('Train/validation overlap')
++            training[modality]=a+b
++        metadata['final_training_membership']={m:[s.identity for s in rows] for m,rows in training.items()}
++        train,validation=loader(training,True),None
++    else:
++        train,validation=loader(data['train'],True),loader(data['validation'])
+     args.output_dir.mkdir(parents=True,exist_ok=False)
+     metadata.update(configuration={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()},
+-                    backbones=provenance,checkpoint_selection='fixed final epoch',validation_interval_epochs=1)
++                    backbones=provenance,checkpoint_selection='fixed final epoch',validation_interval_epochs=None if args.train_with_validation else 1)
+     save_history(args.output_dir/'metadata.json',metadata)
+     history=[];started=time.monotonic()
+     for number in range(1,args.epochs+1):
+         random.seed(number-1)
+         tr=epoch(model,train,device,optimizer,args.max_train_batches)
+-        with evaluation_rng():val=epoch(model,validation,device,max_batches=args.max_eval_batches)
+-        history.append({'epoch':number,'learning_rate':optimizer.param_groups[0]['lr'],
+-                        'train_loss':tr['loss'],'train_accuracy':tr['accuracy'],
+-                        'validation_loss':val['loss'],'validation_accuracy':val['accuracy']})
++        row={'epoch':number,'learning_rate':optimizer.param_groups[0]['lr'],
++             'train_loss':tr['loss'],'train_accuracy':tr['accuracy']}
++        if validation is not None:
++            with evaluation_rng():val=epoch(model,validation,device,max_batches=args.max_eval_batches)
++            row.update(validation_loss=val['loss'],validation_accuracy=val['accuracy'])
++        history.append(row)
+         save_history(args.output_dir/'history.json',history)
+         print(json.dumps(history[-1]),flush=True)
+     torch.save(model.state_dict(),args.output_dir/'model.state_dict.pt')
+@@ -90,6 +103,10 @@
+              'test_data_opened':False}
+     if args.evaluate_test:
+         test,_=collect(args.raw_root,args.protocol,roles=('test',))
++        if args.train_with_validation:
++            for modality,samples in test['test'].items():
++                if {s.identity for s in samples}&{s.identity for s in training[modality]}:
++                    raise ValueError('Training/test overlap')
+         results['test']=epoch(model,loader(test['test']),device,max_batches=args.max_eval_batches)
+         results['test_data_opened']=True
+     save_history(args.output_dir/'result.json',results)

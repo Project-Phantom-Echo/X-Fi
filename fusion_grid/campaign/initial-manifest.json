@@ -1,0 +1,412 @@
+{
+  "stage": "initial",
+  "tasks": [
+    {
+      "protocol": "unseen_subjects_001",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/subjects/backbones/unseen_subjects_001"
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/subjects/backbones/unseen_subjects_001"
+    },
+    {
+      "protocol": "unseen_subjects_001",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/subjects/backbones/unseen_subjects_001"
+    },
+    {
+      "protocol": "unseen_room_subject_rotation_1",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_1"
+    },
+    {
+      "protocol": "unseen_room_subject_rotation_1",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_1"
+    },
+    {
+      "protocol": "unseen_room_subject_rotation_1",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_1"
+    },
+    {
+      "protocol": "unseen_room_subject_rotation_2",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_2"
+    },
+    {
+      "protocol": "unseen_room_subject_rotation_2",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_2"
+    },
+    {
+      "protocol": "unseen_room_subject_rotation_2",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_2"
+    },
+    {
+      "protocol": "unseen_room_subject_rotation_3",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_3"
+    },
+    {
+      "protocol": "unseen_room_subject_rotation_3",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_3"
+    },
+    {
+      "protocol": "unseen_room_subject_rotation_3",
+      "seed": 1,
+      "epochs": 100,
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.01,
+      "backbone_runs": "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_3"
+    }
+  ],
+  "source_sha256": {
+    "source/x-fi/XRF55_HAR/XRF55_Dataset.py": "acd30c5e8f1c616a6c0215dde8ce8158297c4d9c9b61b7a7ec3b684ab1fec41f",
+    "source/x-fi/XRF55_HAR/summarize_backbone_grid.py": "43fc5ad53e4ef592928954745f517959e90cc1093514014169bd238b3824fe78",
+    "source/x-fi/XRF55_HAR/test_full_protocol_training.py": "d629781004d39921e2a935ba807c9db803a852688f27ce14a5bee3c21d48b8f0",
+    "source/x-fi/XRF55_HAR/X_Fi.py": "7955a3259efed0c80099fd6971427e05b02147a17f7e2b454127bf3fb9971ca7",
+    "source/x-fi/XRF55_HAR/test_near_chance.py": "f920283873c49a176542e9bd13e1f7cf629b82096b6e929bfc5a7bce66287f17",
+    "source/x-fi/XRF55_HAR/test_protocol_grid.py": "ec9ca3f87ba323e38b9bbf8a753b0e5b3be36d7f82750ef11541d30e668409fe",
+    "source/x-fi/XRF55_HAR/near_chance.py": "b99d2406d6c82e4ef6d276f4b3472d70b3b5fe28fca3810c2d5065282bc6c8c2",
+    "source/x-fi/XRF55_HAR/test_epoch_validation.py": "3d32e4598f3820cdf67ac55beb70162c616cfc68e44610f4daf1bca8701e68fe",
+    "source/x-fi/XRF55_HAR/test_final_protocol_backbones.py": "92e5854bfdde0616fd034eb7db3d301b859693ba4dcc5beef433ce34059358c5",
+    "source/x-fi/XRF55_HAR/protocol_backbone_grid.py": "04dc7ee24e54ca642f13746b9c3216d3b7917871d4a8d6fee81226b9dacf0eb3",
+    "source/x-fi/XRF55_HAR/search_backbone.py": "9773caa152496c2f0233443dcdf5455fcef4e1c542e4255af9a649a642b059f8",
+    "source/x-fi/XRF55_HAR/run.py": "a623424dd9b57542118454a163aa31be56b01c5e279ac5f43ccfc3f8832e8cc0",
+    "source/x-fi/XRF55_HAR/backbone_paths.py": "9a3c222f1fb2df44d110a6ade460f4bda266c58bba321a0d5e3e00afa6598cb3",
+    "source/x-fi/XRF55_HAR/search_protocol_backbone.py": "c3a50a79a482ca6f68999763843e7f9fd7c9c33035cf812488647296c918735f",
+    "source/x-fi/XRF55_HAR/final_protocol_backbones.py": "b1d4d9762e9be598eddc6c6163899191b7ac8c6bba1fca88c4701150072a6ce8",
+    "source/x-fi/XRF55_HAR/protocol_backbone_runner.py": "7ac45ed0f45ac5dc9f484ec582d1600ea53faf15f92b4ba05ae07a5a54214c04",
+    "source/x-fi/XRF55_HAR/pretrain_backbones.py": "30c721009eb796f3dfd0ac7a94b63e872a3fd022366d20cf17582b5194ef4bad",
+    "source/x-fi/XRF55_HAR/compare_backbone_weights.py": "0aed958ec276e942db28d63d4707bdfd59686addc259067d96287fae2961cd54",
+    "source/x-fi/XRF55_HAR/evaluate_backbones.py": "43d253736dc5d1502e3bf82164e39ac2dea66bc56da5a192a82cf8b2d32135a2",
+    "source/x-fi/XRF55_HAR/utils.py": "223c98fb56b7fc77ea44c23da3f3e4476f5bc4f851fb4fb1d5dca77d3f06c4bf",
+    "source/x-fi/XRF55_HAR/validate_all.py": "9ae1120856f3916eb7724795b5040a0d02797b95247a8ebad83adabc89a02085",
+    "source/x-fi/XRF55_HAR/test_selected_backbones.py": "f45b72ed4ac6c532fd6c007fdafc4e9417926389b40b2a67a99306d58194cd6b",
+    "source/x-fi/XRF55_HAR/run_protocol.py": "67f8c9300da8b80e649fcf047970b32a94a119d3a521191f6e7a1570e1b59c0b",
+    "source/x-fi/XRF55_HAR/backbone_models/RFID/ResNet.py": "c5cfa4b0cd1ad28811ee618f6899fce8ae1c0af373128f1b2ecddf505dd6ebb1",
+    "source/x-fi/XRF55_HAR/backbone_models/RFID/BiLSTM.py": "aa70784464fceee1b3796ea5c867bc0cdfa73f7050a7484763e0c0237b62b3b5",
+    "source/x-fi/XRF55_HAR/backbone_models/mmWave/ResNet.py": "43c98e1b53729fdbb985cf08dfb632a43b8647e9b3a203af4f2291edb7a68593",
+    "source/x-fi/XRF55_HAR/backbone_models/WIFI/ResNet.py": "f0dc9da6d0499dddd45142bee6a44dcfb0011a9c2a73f07fa25e8fa88b9a6dd1",
+    "source/x-fi/XRF55_HAR/backbone_models/WIFI/BiLSTM.py": "7bece7d6fc6bf621c328cacd8202e70d6b29723af3f14cfaedfa3d6c438ecc9c",
+    "source/wireless-sensing/experiments-on-xrf55/baseline_protocols.py": "259d2f8921ac23ed844a79d542bbd6c3a0015f68a5ba59ab6eb8c600c5dafd9c",
+    "source/wireless-sensing/experiments-on-xrf55/split.py": "2d41f32ec9db3108cefc76517c7fc0d4485e0114856029bb7262d4cdec8444fb",
+    "source/wireless-sensing/experiments-on-xrf55/subject_splits.json": "52610574a5a1af8097b141a39055a60348e3ecc20087df3f749b6ebd8afc0847",
+    "launcher.py": "718c9b1dc0b5482adb1a65d91c944de279dec0d15cb3637acaf3c8553ed29ddd",
+    "submit.sh": "81d040d297f3a7b7ea48883e517b5ba577af005c43aa81ab07a7ee0f5709ebd5",
+    "dataset.json": "788444bb84d6723d8d07939914b754ea2156daddd493eac55fa7bf78934139bd"
+  },
+  "backbone_sha256": {
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/subjects/backbones/unseen_subjects_001/wifi/result.json": "2b9ac7ce389caa4679f9a240cdf377a641986fddde761106b96ff5464497aa42",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/subjects/backbones/unseen_subjects_001/wifi/model.state_dict.pt": "0a4c3644c3fadfb91af5871453ac6cbb4db548d09efea4b0be641d9e619538ef",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/subjects/backbones/unseen_subjects_001/rfid/result.json": "b3f0dc22205c9693dfe15d8e6098eddf7f0cb1904b5ee8dc233fcbd27528194d",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/subjects/backbones/unseen_subjects_001/rfid/model.state_dict.pt": "2f6e3c4cb987b7f7c7f0e1ca65848307e35bf32cd27b3bb352ad90d3fe4cde6b",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/subjects/backbones/unseen_subjects_001/mmwave/result.json": "797c254601fab2330b57c0daa9bee880537232dba281161c0c030f90b8db3e84",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/subjects/backbones/unseen_subjects_001/mmwave/model.state_dict.pt": "80f8309f8159858f1150c1d50aae4e6b83090a5db2c0f9cb70b55d989a8401f2",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_1/wifi/result.json": "d79aaefeef699dd2ac6dba4fef0185907c456a1cdfee59cb5f85aaefd73cfa68",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_1/wifi/model.state_dict.pt": "05c5fbdc182a93ddaa74c815265b7eef1c5ec0cfbade806947462424b0947ecb",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_1/rfid/result.json": "97c0c5852c8f2a824782e3c814afaa12bd8ddf8f9f2d89efb1e9439985e102aa",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_1/rfid/model.state_dict.pt": "cd7cf99de9f3f996751608c3c214dde386089635b0fd0a0f92f8f07cde8041f6",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_1/mmwave/result.json": "dd92e79c978e1ace427cf32db69d6dadbd3d7e337d14a365d42baecabae30bef",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_1/mmwave/model.state_dict.pt": "99c2aaa6b3f9fba2defeb94a10a9a1defbecc5835b30752e2f1ca14192e20aa2",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_2/wifi/result.json": "69cbf700c7bcb14fdc66ff5e5791ebf1223945f1243e235e1b75416a4f57b14b",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_2/wifi/model.state_dict.pt": "4c3d0070946562e5064c24224a579928966de153e683fb2b10642a55bedd80aa",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_2/rfid/result.json": "b8705ffe94cf3309bb0774702cff55b50705e259c1f6cbd74fc2cc795d3e462d",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_2/rfid/model.state_dict.pt": "bc5a7b984d94ef4f79a74a071875790246125715dfd92ad72dbdd4fdda3023dd",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_2/mmwave/result.json": "d325334fa88c727a8457d2dbe4c4a00bc14ed33aaaccd2d146e842a0689cb2b0",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_2/mmwave/model.state_dict.pt": "b1571cbfda2814f2883700686d49aa4817092d818ac55267f5ebb9e04a449031",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_3/wifi/result.json": "c875cb13680856a1a2e0d8c6204674b5d90caf1bdc75de84d4136ad16b05106f",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_3/wifi/model.state_dict.pt": "e68e91689d1012fdb6ed41d7712db11c333f89e4740f6ca2209214e8c25dc588",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_3/rfid/result.json": "fd88ca2dd573aefa9efa537e617eb9b2e19ed97747a4d93c60c5a7db0e68d716",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_3/rfid/model.state_dict.pt": "b27c5e58c684ccfc6bda89f410e52c107b5433b5541c231e1752abdd82264e97",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_3/mmwave/result.json": "f1948cb87179f38e4f1b8ad660bda3d4a4821612aca1a94b16b6757af49cabd5",
+    "/mnt/weka/fgeikyan/rf-perception-papers/compass/outputs/proposed-seed1-four-splits/rotations/backbones/unseen_room_subject_rotation_3/mmwave/model.state_dict.pt": "3619c11112808ec38993cd18700ae2a848ae4c278d5801d72790e99a1f12d0bd"
+  },
+  "memberships": {
+    "unseen_subjects_001": {
+      "protocol": "unseen_subjects_001",
+      "description": "Unseen-subject split 1: validation IDs [3, 6, 31], test IDs [5, 7, 13]. Draws from Scenes 2\u20134; matching Scene-1 IDs follow their partition.",
+      "source_sha256": {
+        "split.py": "2d41f32ec9db3108cefc76517c7fc0d4485e0114856029bb7262d4cdec8444fb",
+        "subject_splits.json": "52610574a5a1af8097b141a39055a60348e3ecc20087df3f749b6ebd8afc0847"
+      },
+      "split_file": "/mnt/weka/fgeikyan/rf-perception-papers/wireless-sensing/experiments-on-xrf55/split.py",
+      "train_membership": {
+        "scenes": [
+          "Scene1",
+          "Scene2",
+          "Scene3",
+          "Scene4"
+        ],
+        "subjects": [
+          1,
+          2,
+          4,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "repetitions": null,
+        "part1_only": false
+      },
+      "counts": {
+        "train": 30800,
+        "validation": 5500
+      },
+      "membership_sha256": {
+        "train": "3dbcefc73fe5795c26685f0fdd7ec9af983c48b1fc67b3a4e9cc77af40c0f94c",
+        "validation": "4931c78b487f36fb2b77973a66c3d29f701ced2b65015e18be173188d127a19f"
+      },
+      "roles_loaded": [
+        "train",
+        "validation"
+      ],
+      "test_data_opened": false
+    },
+    "unseen_room_subject_rotation_1": {
+      "protocol": "unseen_room_subject_rotation_1",
+      "description": "Train Scenes 1+2; validate Scene 3; test Scene 4. Exclude evaluation subjects from Scene-1 training; retain P30.",
+      "source_sha256": {
+        "split.py": "2d41f32ec9db3108cefc76517c7fc0d4485e0114856029bb7262d4cdec8444fb",
+        "subject_splits.json": "52610574a5a1af8097b141a39055a60348e3ecc20087df3f749b6ebd8afc0847"
+      },
+      "split_file": "/mnt/weka/fgeikyan/rf-perception-papers/wireless-sensing/experiments-on-xrf55/split.py",
+      "train_membership": {
+        "scenes": [
+          "Scene1",
+          "Scene2"
+        ],
+        "subjects": [
+          1,
+          2,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "repetitions": null,
+        "part1_only": false
+      },
+      "counts": {
+        "train": 29700,
+        "validation": 3300
+      },
+      "membership_sha256": {
+        "train": "9c3df4f5537e45b67f58f3fe84f8379561ef06beb5dfbc0b5897cd98e86ba9f8",
+        "validation": "ebe2dd81260f68adf4df89cd4bf8760f306530034eaeea09ae71a62f684d113b"
+      },
+      "roles_loaded": [
+        "train",
+        "validation"
+      ],
+      "test_data_opened": false
+    },
+    "unseen_room_subject_rotation_2": {
+      "protocol": "unseen_room_subject_rotation_2",
+      "description": "Train Scenes 1+3; validate Scene 4; test Scene 2. Exclude evaluation subjects from Scene-1 training; retain P30.",
+      "source_sha256": {
+        "split.py": "2d41f32ec9db3108cefc76517c7fc0d4485e0114856029bb7262d4cdec8444fb",
+        "subject_splits.json": "52610574a5a1af8097b141a39055a60348e3ecc20087df3f749b6ebd8afc0847"
+      },
+      "split_file": "/mnt/weka/fgeikyan/rf-perception-papers/wireless-sensing/experiments-on-xrf55/split.py",
+      "train_membership": {
+        "scenes": [
+          "Scene1",
+          "Scene3"
+        ],
+        "subjects": [
+          1,
+          2,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "repetitions": null,
+        "part1_only": false
+      },
+      "counts": {
+        "train": 30800,
+        "validation": 3300
+      },
+      "membership_sha256": {
+        "train": "5ee18219356accf254fda5bce3e54df963a6da9e9510dd613b0dc5549b408ae9",
+        "validation": "88a51a217b4c87d99b8a35387ac8066fd60091de4c19bf65afc96c3bd71546b2"
+      },
+      "roles_loaded": [
+        "train",
+        "validation"
+      ],
+      "test_data_opened": false
+    },
+    "unseen_room_subject_rotation_3": {
+      "protocol": "unseen_room_subject_rotation_3",
+      "description": "Train Scenes 1+4; validate Scene 2; test Scene 3. Exclude evaluation subjects from Scene-1 training; retain P30.",
+      "source_sha256": {
+        "split.py": "2d41f32ec9db3108cefc76517c7fc0d4485e0114856029bb7262d4cdec8444fb",
+        "subject_splits.json": "52610574a5a1af8097b141a39055a60348e3ecc20087df3f749b6ebd8afc0847"
+      },
+      "split_file": "/mnt/weka/fgeikyan/rf-perception-papers/wireless-sensing/experiments-on-xrf55/split.py",
+      "train_membership": {
+        "scenes": [
+          "Scene1",
+          "Scene4"
+        ],
+        "subjects": [
+          1,
+          2,
+          3,
+          4,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "repetitions": null,
+        "part1_only": false
+      },
+      "counts": {
+        "train": 30800,
+        "validation": 3300
+      },
+      "membership_sha256": {
+        "train": "92117f73d306069aff503db5093817235028f32afd8c998d0fb308e589bf786a",
+        "validation": "83304470709432506d94bc8d474fcd764a5dc3e0cfecb3c5df20d993fb97bf2b"
+      },
+      "roles_loaded": [
+        "train",
+        "validation"
+      ],
+      "test_data_opened": false
+    }
+  },
+  "raw_root": "/mnt/weka/rmkrtchyan/ws/data/XRF55",
+  "python": "/mnt/weka/fgeikyan/rf-perception-papers/compass/.venv/bin/python",
+  "selection": "epoch-100 validation accuracy; no test evaluation",
+  "backbone_policy": "reuse split-matched train-only seed-1 backbones; frozen parameters",
+  "extension_policy": "additional weight decay uses separate tasks and outputs; never rerun initial cells"
+}
